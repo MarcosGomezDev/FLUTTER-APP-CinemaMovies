@@ -10,7 +10,7 @@ class MoviesApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Peliculas',
+      title: 'Películas',
       initialRoute: 'home',
       routes: {
         'home':    ( _ ) => HomeScreen(),
