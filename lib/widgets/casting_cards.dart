@@ -26,7 +26,7 @@ class _CastCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 3),
+      margin: const EdgeInsets.symmetric(horizontal: 0),
       width: 110,
       height: 100,
       // color: Colors.blue,
