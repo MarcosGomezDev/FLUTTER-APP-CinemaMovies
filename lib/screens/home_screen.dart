@@ -22,13 +22,13 @@ class HomeScreen extends StatelessWidget {
       // SingleChildScrollView: nos permite hacer scroll
       body: SingleChildScrollView(
         child: Column(
-          children: [
+          children: 
+          [
             // Targetas principales
             CardSwiper(),
       
             // Listado de peliculas
             MovieSlider(),
-      
       
           ],
         ),

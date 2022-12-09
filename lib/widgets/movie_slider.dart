@@ -12,8 +12,8 @@ class MovieSlider extends StatelessWidget {
       height: 285,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          
+        children: 
+        [
           const Padding(
             padding: EdgeInsets.symmetric(horizontal: 20),
             child: Text(

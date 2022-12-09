@@ -48,6 +48,7 @@ class _CustomAppBar extends StatelessWidget {
         title: Container(
           width: double.infinity,
           alignment: Alignment.bottomCenter,
+          padding: const EdgeInsets.only(bottom: 10),
           color: Colors.black12,
           child: const Text(
             'movie.title',
@@ -56,7 +57,7 @@ class _CustomAppBar extends StatelessWidget {
         ),
         background: const FadeInImage(
           placeholder: AssetImage('assets/loading.gif'), 
-          image: NetworkImage('https://via.placeholder.com/500x300.jpg'),
+          image: NetworkImage('http://via.placeholder.com/100x150.jpg'),
           fit: BoxFit.cover,
         ),
       ),
@@ -128,6 +129,7 @@ class _Overview extends StatelessWidget {
         'Aute est aliqua mollit aliquip. Ullamco culpa ex nulla reprehenderit cillum est adipisicing fugiat laborum culpa cillum. Fugiat incididunt excepteur ea aliqua dolore quis nulla enim aliqua ut. Culpa pariatur duis eiusmod excepteur anim amet est laborum reprehenderit esse dolore quis quis.',
         textAlign: TextAlign.justify,
         style: Theme.of(context).textTheme.subtitle1,
+        
       ),
     );
   }
