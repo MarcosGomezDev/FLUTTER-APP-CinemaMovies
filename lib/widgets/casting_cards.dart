@@ -23,7 +23,6 @@ class CastingCards extends StatelessWidget {
 }
 
 class _CastCard extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Container(
