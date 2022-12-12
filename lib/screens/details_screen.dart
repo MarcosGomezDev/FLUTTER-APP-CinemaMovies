@@ -13,10 +13,12 @@ class DetailsScreen extends StatelessWidget {
 
     return Scaffold(
       body: CustomScrollView(
-        slivers: [
+        slivers: 
+        [
           _CustomAppBar(),
           SliverList(
-            delegate: SliverChildListDelegate([
+            delegate: SliverChildListDelegate(
+              [
               _PosterAndTitle(),
               
               _Overview(),
@@ -25,7 +27,8 @@ class DetailsScreen extends StatelessWidget {
 
               CastingCards(),
 
-            ]), 
+              ]
+            ), 
           ),
         ],
       ),
@@ -124,7 +127,8 @@ class _Overview extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 5),
+      margin: const EdgeInsets.only(top: 10),
       child: Text(
         'Aute est aliqua mollit aliquip. Ullamco culpa ex nulla reprehenderit cillum est adipisicing fugiat laborum culpa cillum. Fugiat incididunt excepteur ea aliqua dolore quis nulla enim aliqua ut. Culpa pariatur duis eiusmod excepteur anim amet est laborum reprehenderit esse dolore quis quis.',
         textAlign: TextAlign.justify,
