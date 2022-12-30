@@ -64,7 +64,7 @@ class _MovieSliderState extends State<MovieSlider> {
                 style: const TextStyle( fontSize: 20, fontWeight: FontWeight.bold)),
             ),
 
-          const SizedBox(height: 15),
+          const SizedBox(height: 7),
 
           Expanded(
             child: ListView.builder(

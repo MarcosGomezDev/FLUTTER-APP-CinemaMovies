@@ -21,7 +21,7 @@ class DetailsScreen extends StatelessWidget {
               [
               _PosterAndTitle(movie:movie,),
               _Overview(movie:movie,),
-              CastingCards(),
+              CastingCards(movie.id),
               ]
             ), 
           ),
@@ -40,7 +40,7 @@ class _CustomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
-      backgroundColor: Colors.amberAccent,
+      backgroundColor: Colors.red,
       expandedHeight: 200,
       floating: false,
       pinned: true,
@@ -50,11 +50,12 @@ class _CustomAppBar extends StatelessWidget {
         title: Container(
           width: double.infinity,
           alignment: Alignment.bottomCenter,
-          padding: const EdgeInsets.only(bottom: 10),
+          padding: const EdgeInsets.only(bottom: 10, left: 10, right: 10),
           color: Colors.black12,
           child: Text(
             movie.title,
             style: const TextStyle( fontSize: 16 ),
+            textAlign: TextAlign.center,
           ),
         ),
         background: FadeInImage(
@@ -101,7 +102,7 @@ class _PosterAndTitle extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
              SizedBox(
-              width: size.width * 0.55,
+              width: size.width * 0.5,
               // height: size.height,
                child: Text(
                  movie.title, 
@@ -111,7 +112,7 @@ class _PosterAndTitle extends StatelessWidget {
                ),
              ),
              SizedBox(
-              width: size.width * 0.55,
+              width: size.width * 0.5,
                child: Text(
                  movie.originalTitle, 
                  style:textTheme.subtitle1,

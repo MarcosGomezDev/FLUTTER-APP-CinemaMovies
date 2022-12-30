@@ -3,10 +3,13 @@
 import 'package:flutter/material.dart';
 
 import 'package:movies/providers/movies_provider.dart';
+import 'package:movies/search/search_delegate.dart';
 import 'package:movies/widgets/widgets.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatelessWidget {
+
+  
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +24,7 @@ class HomeScreen extends StatelessWidget {
         actions: [
           IconButton(
             icon: const Icon(Icons.search_outlined),
-            onPressed: () {}, 
+            onPressed: () => showSearch(context: context, delegate: MovieSearchDelegate()), 
           ),
         ],
       ),
@@ -41,7 +44,6 @@ class HomeScreen extends StatelessWidget {
                 moviesProvider.getPopularmovies();
               },
             ),
-      
           ],
         ),
       ),

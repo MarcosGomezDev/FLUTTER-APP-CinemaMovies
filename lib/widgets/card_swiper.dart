@@ -16,7 +16,7 @@ class CardSwiper extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    final size = MediaQuery.of(context).size;
+    final Size size = MediaQuery.of(context).size;
 
     if ( movies.isEmpty) {
       return SizedBox(
@@ -33,8 +33,8 @@ class CardSwiper extends StatelessWidget {
       child: Swiper(
         itemCount: movies.length,
         layout: SwiperLayout.STACK,
-        itemWidth: size.width * 0.65,
-        itemHeight: size.height * 0.45,
+        itemWidth: size.height * 0.30,
+        itemHeight: size.height * 0.46,
         itemBuilder: (BuildContext context,int index) {
 
           final movie = movies[index];
